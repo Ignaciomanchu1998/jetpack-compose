@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.learncompose.advanced_ui.MyAdvancedTextField
+import com.example.learncompose.advanced_ui.MyOutlinedField
 import com.example.learncompose.advanced_ui.MyText
 import com.example.learncompose.advanced_ui.MyTextField
 import com.example.learncompose.ui.theme.LearnComposeTheme
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             LearnComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyAdvancedTextField(
+                    MyOutlinedField(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -36,6 +37,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     LearnComposeTheme {
-        MyAdvancedTextField()
+        MyOutlinedField()
     }
 }
